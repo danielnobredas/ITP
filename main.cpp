@@ -1,3 +1,28 @@
+<<<<<<< HEAD
+#include <iostream>
+#include "dado.h"
+#include "jogador.h"
+
+using namespace std;
+
+int main(int argc, char const *argv[]){
+	dado d4(3);
+	dado d6(6);
+	dado d8(8);
+	dado d12(12);
+	dado d20(20);
+
+	jogador alice("Alice");
+	jogador bob("Bob");
+	jogador carl("Carl");
+	
+	
+	cout << alice.getNome() << " obteve o total de: " << alice.jogarDados(d4,d6,d8,d12,d20) << " pontos.";
+	cout << bob.getNome() << " obteve o total de: " << bob.jogarDados(d4,d6,d8,d12,d20) << " pontos.";
+	cout << carl.getNome() << " obteve o total de: " << carl.jogarDados(d4,d6,d8,d12,d20) << " pontos.";
+
+	return 0;
+=======
 //
 //  main.cpp
 //  Aula-Fracao
@@ -55,4 +80,5 @@ int main(int argc, const char * argv[]) {
     std::cout << "Todos testes passaram.\n";
     
     return 0;
+>>>>>>> 8a366f3ce15d56d1a5e2b22f2fb212d30d078b28
 }
